@@ -1,0 +1,60 @@
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &_center {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 15px;
+  }
+  &_left {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 66px;
+  }
+  &_text {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #101010;
+  }
+  &_right {
+    display: flex;
+    gap: 30px;
+  }
+  &_burger
+  {
+    display: none;
+    &_item
+    {
+      color: black;
+      border-radius: 20px;
+    }
+  }
+}
+
+@media only screen and (max-width:585px)
+{
+  .navbar
+  {
+    &_center
+    {
+      display: none;
+    }
+    &_right
+    {
+      display: none;
+    }
+    &_burger
+    {
+      display: flex;
+    }
+  }
+}

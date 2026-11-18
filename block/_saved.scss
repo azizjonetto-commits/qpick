@@ -1,0 +1,103 @@
+.saved {
+  margin-top: 60px;
+  gap: 50px;
+
+  &_title {
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #1c1c27;
+  }
+  &_top_title {
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #838383;
+    margin-top: 50px;
+  }
+  &_top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 7%;
+  }
+  &_bottom {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    gap: 6%;
+  }
+  &_card {
+    height: 350px;
+    padding: 20px 30px;
+    margin-top: 30px;
+    background: #ffffff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+
+    .card_title {
+      width: 100%;
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 17px;
+      line-height: 21px;
+      color: #1c1c27;
+    }
+    .card_price {
+      font-size: 20px;
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 17px;
+      line-height: 21px;
+      color: #ffa542;
+    }
+    .card_discount {
+      font-family: "Montserrat";
+      font-weight: 600;
+      font-size: 13px;
+      line-height: 16px;
+      text-decoration-line: line-through;
+      color: #ffce7f;
+    }
+    .card_rate {
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      gap: 10px;
+      margin-top: 10px;
+    }
+    .card_rate i {
+      color: #ffce7f;
+    }
+    .card_bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+    .card_text {
+      font-family: "Montserrat";
+      font-weight: 600;
+      font-size: 17px;
+      color: #1c1c27;
+    }
+    .card_center
+    {
+      margin: auto;
+    }
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .saved_top,
+  .saved_bottom {
+    flex-wrap: wrap;
+  }
+}
